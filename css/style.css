@@ -140,6 +140,7 @@ input[type="text"]::placeholder {
   margin-bottom: 10px;
   font-size: 0.875rem;
   position: relative;
+  text-decoration: line-through;
 }
 
 .completed-tasks li span {
