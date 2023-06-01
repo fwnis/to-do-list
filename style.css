@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  background: #d4d4d4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: auto;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+input[type="text"] {
+  width: 240px;
+  min-width: 100%;
+  height: 35px;
+  padding: 8px;
+
+  color: #6d6d6d;
+  background: #d4d4d4;
+  border: 1px solid #cacaca;
+  border-radius: 5px;
+}
+
+input[type="text"]::placeholder {
+  color: #b9b9b9;
+}
+
+.add {
+  padding: 5px 15px;
+  background: #448f47;
+  border: 0;
+  margin-left: 10px;
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  font-size: 1rem;
+  color: white;
+  transition: 0.2s;
+}
+
+.add:hover {
+  background: #19631C;
+}
+
+.h1 {
+  grid-column: 1 / -1;
+  font-size: 0.875rem;
+  color: #b6b6b6;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  font-weight: 400;
+  position: relative;
+}
+
+.h1::before {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: rgba(0, 0, 0, .03);
+  position: absolute;
+  top: -20px;
+}
+
+.tasks {
+  grid-column: 1 / -1;
+}
+
+.tasks li {
+  background: #d4d4d4;
+  padding: 8px;
+  border-radius: 5px;
+  color: #525252;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.tasks li span {
+  margin-left: 5px;
+}
+
+.tasks li > button {
+  background: #BE5454 url("./remove.svg") no-repeat center center;
+  right: -5px;
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.tasks li > button:hover {
+  background: #832D2D url("./remove.svg") no-repeat center center;
+}
+
+.completed-tasks {
+  grid-column: 1 / -1;
+}
+
+.completed-tasks li {
+  background: #C1DFC3;
+  padding: 8px;
+  border-radius: 5px;
+  color: #525252;
+  margin-bottom: 10px;
+  font-size: 0.875rem;
+  position: relative;
+}
+
+.completed-tasks li span {
+  margin-left: 5px;
+}
+
+.completed-tasks li > button {
+  background: #BE5454 url("./remove.svg") no-repeat center center;
+  right: -5px;
+  top: -5px;
+  width: 18px;
+  height: 18px;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  transition: 0.2s;
+}
+
+.completed-tasks li > button:hover {
+  background: #832D2D url("./remove.svg") no-repeat center center;
+}
+
+
