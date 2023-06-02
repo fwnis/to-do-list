@@ -33,6 +33,8 @@ export default class ToDoList {
           this.todoList.removeChild(todoItem);
         else this.completedTasks.removeChild(todoItem);
       });
+
+      this.todoInput.value = "";
     }
   }
 
@@ -53,8 +55,17 @@ export default class ToDoList {
     this.addButton.addEventListener("click", this.createTodo);
   }
 
+  inputEvent() {
+    this.todoInput.addEventListener("keyup", (e) => {
+      if (e.key === "Enter") {
+        this.createTodo();
+      }
+    });
+  }
+
   init() {
     this.addButtonEvent();
+    this.inputEvent();
     return this;
   }
 }
