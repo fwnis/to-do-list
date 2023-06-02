@@ -64,8 +64,8 @@ input[type="checkbox"] {
 input[type="checkbox"]::after {
   display: block;
   content: "";
-  width: 16px;
-  height: 16px;
+  width: 18px;
+  height: 18px;
   background: #e7e7e7;
   border-radius: 4px;
   visibility: visible;
@@ -127,7 +127,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .tasks li span {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
 .tasks li > button {
@@ -164,7 +164,7 @@ input[type="checkbox"]:checked::after {
 }
 
 .completed-tasks li span {
-  margin-left: 8px;
+  margin-left: 12px;
 }
 
 .completed-tasks li > button {
