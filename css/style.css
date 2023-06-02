@@ -55,6 +55,26 @@ input[type="text"]::placeholder {
   color: #b9b9b9;
 }
 
+input[type="checkbox"] {
+  position: relative;
+  visibility: hidden;
+  cursor: pointer;
+}
+
+input[type="checkbox"]::after {
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: #e7e7e7;
+  border-radius: 4px;
+  visibility: visible;
+}
+
+input[type="checkbox"]:checked::after {
+  background: #448F47 url("../img/check.svg") no-repeat center center;
+}
+
 .add {
   padding: 5px 15px;
   background: #448f47;
@@ -107,7 +127,7 @@ input[type="text"]::placeholder {
 }
 
 .tasks li span {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .tasks li > button {
@@ -144,7 +164,7 @@ input[type="text"]::placeholder {
 }
 
 .completed-tasks li span {
-  margin-left: 5px;
+  margin-left: 8px;
 }
 
 .completed-tasks li > button {
