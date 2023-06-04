@@ -39,9 +39,8 @@ export default class ToDoList {
   }
 
   checkTask() {
-    const todoChecked = document.querySelectorAll("input[type='checkbox']");
-    const checkedArray = Array.from(todoChecked);
-    checkedArray.forEach((item) => {
+    const todoCheckbox = document.querySelectorAll("input[type='checkbox']");
+    Array.from(todoCheckbox).forEach((item) => {
       if (item.checked) {
         if (item.parentElement.parentElement === this.todoList)
           this.completedTasks.appendChild(item.parentElement);
