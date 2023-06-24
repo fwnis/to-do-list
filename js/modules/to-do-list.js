@@ -41,9 +41,8 @@ export default class ToDoList {
   checkTask() {
     const todoCheckbox = document.querySelectorAll("input[type='checkbox']");
     Array.from(todoCheckbox).forEach((item) => {
-      if (item.checked) {
-        if (item.parentElement.parentElement === this.todoList)
-          this.completedTasks.appendChild(item.parentElement);
+      if (item.checked && item.parentElement.parentElement) {
+        this.completedTasks.appendChild(item.parentElement);
       } else {
         this.todoList.appendChild(item.parentElement);
       }
@@ -65,6 +64,7 @@ export default class ToDoList {
   init() {
     this.addButtonEvent();
     this.inputEvent();
+    this.checkLocalStorage();
     return this;
   }
 }
