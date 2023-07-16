@@ -64,7 +64,6 @@ export default class ToDoList {
   init() {
     this.addButtonEvent();
     this.inputEvent();
-    this.checkLocalStorage();
     return this;
   }
 }
